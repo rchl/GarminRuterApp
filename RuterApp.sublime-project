@@ -1,0 +1,30 @@
+{
+	"build_systems":
+	[
+		{
+			"cmd":
+			[
+				"python",
+				"${project_path}/../start_garmin_project.py",
+				".",
+			],
+			"env":
+			{
+				"TERM": "xterm-16color"
+			},
+			"file_regex": "^.+?([^\\s\\n\\(\\)\\{\\}]+):(\\d+)",
+			"name": "Compile",
+			"syntax": "Packages/ANSIescape/ANSI.tmLanguage",
+			"target": "ansi_color_build",
+			"working_dir": "${project_path}"
+		},
+	],
+	"folders":
+	[
+		{
+			"path": ".",
+			"folder_exclude_patterns": ["bin"],
+			"file_exclude_patterns": ["*.sublime-workspace", "*.sublime-project"],
+		}
+	]
+}
