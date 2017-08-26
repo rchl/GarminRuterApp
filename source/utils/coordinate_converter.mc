@@ -121,7 +121,7 @@ class CoordinateConverter {
     return longitudeZone.toNumber();
   }
 
-  static hidden class ReferenceEllipsoid {
+  static class ReferenceEllipsoid {
     var major;
     var minor;
     var ecc;
@@ -133,7 +133,7 @@ class CoordinateConverter {
     }
   }
 
-  static hidden class LatZones {
+  static class LatZones {
     static const DEGRESS = [-90, -84, -72, -64, -56, -48, -40, -32, -24, -16,
                             -8, 0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 84];
     static const NEG_DEGREES = [-90, -84, -72, -64, -56, -48, -40, -32, -24,
